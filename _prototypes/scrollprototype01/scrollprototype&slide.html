@@ -1,0 +1,53 @@
+
+<head>
+    <title>jess hutchison</title>
+    <link rel='stylesheet' href='scrollprototype.css'>
+    <meta name="viewport" content="width=device-width">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+</head>
+<body>
+
+
+    <div class="content"><img src="img/01.png"></div>
+    <div class="sticky img center"><img src="img/02.png"></div>
+    <div class="sticky img spacing left"><img src="img/03.png"></div>
+    <div class="space">hey</div>
+
+
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+
+
+
+<script>
+    
+var controller = new ScrollMagic.Controller();    
+    
+    
+//LOOP   
+    
+$('.sticky').each(function(){
+    
+
+
+//build a scene
+    
+    var scene = new ScrollMagic.Scene({
+    triggerElement:this, // starting scene, when reaching this element
+    triggerHook:0.1,
+    duration: 0// pin the element for a total of 400px
+    })
+    .setPin(this); // the element we want to pin
+
+    // Add Scene to ScrollMagic Controller
+    controller.addScene(scene);
+    
+});
+
+
+</script>

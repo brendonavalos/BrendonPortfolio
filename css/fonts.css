@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'f37_boltonlight';
+  src:  url('f37bolton-light-webfont.woff2') format('woff2'),
+        url('f37bolton-light-webfont.woff') format('woff');
+    
+}
+
+@font-face {
+    font-family: 'f37bolton-regularregular';
+    src: url('f37bolton-regular-webfont.woff2') format('woff2'),
+         url('f37bolton-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    
+
+}
+
+
+
+.open {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Marcellus', serif;
+  text-transform: uppercase;
+  font-size: 2vw;
+  line-height: 1.1;
+}
+
+.open a { 
+  color:inherit;
+  text-decoration: none;
+ }
+
+
+.blurb { 
+text-transform:none; }
+
+
+.credits
+    {
+    text-rendering: optimizeLegibility;
+    vertical-align:middle;
+    white-space: nowrap;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'f37bolton-regularregular', serif;
+    font-size:1.75vw;
+    font-weight: 100;
+    font-style: 100;
+    }
+}

@@ -1,0 +1,50 @@
+
+
+.content {
+    display:flex;
+    margin:auto;
+    position:fixed;
+    height:100%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.content img {width:60%;}
+
+
+.sticky {
+    text-align: center;
+    position:relative;
+    width:100%;
+    top:1000;
+}
+
+
+.img {
+    text-align: center;
+    position:relative;
+}
+
+.spacing {margin-top:200;}
+
+
+.center img{
+    width:55%;
+    margin-left:20%;
+    
+}
+
+
+.left img {
+    margin-right:10%;
+    width:30%;
+    padding-top:5%;    ;
+}
+
+
+
+.space {
+    position:absolute;
+    top:6000;
+}
