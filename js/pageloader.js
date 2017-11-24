@@ -73,7 +73,8 @@ $('.close-title').click(function(){
    $('.scroll-display').removeClass('flex')
    $('.content').css('margin-top','20%')
    $('.blurb' ).html(indexinfo);
-   $('.credits ul' ).html(indexcredits); 
+   $('.credits ul' ).html(indexcredits);
+   $('.scroll-display').off('click');
 });
 
 

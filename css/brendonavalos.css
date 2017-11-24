@@ -26,6 +26,7 @@
 
    max-width: 60vw;
    max-height: 75vh;
+   user-select: none;
 }
 
 
@@ -34,6 +35,7 @@
   padding:0;
   margin:auto;
   position: absolute;
+    user-select: none;
 }
 
 
@@ -261,21 +263,35 @@ body {
 
 
 .right {
-    padding-right:60%;
+    padding-left:20%;
 }
 
 .top {
-   padding-top:5%;
+   padding-bottom:5%;
 }
 
 .bottom{
-    padding-bottom:5%;
+    padding-top:5%;
 }
 
 .left
     {
+        padding-right:20%;
+    }
+
+.farleft
+    {
+        padding-right:60%;
+    }
+.farright
+    {
         padding-left:60%;
     }
+.shrink img{
+    max-height: 59vh;
+
+}
+
 .flex
 {display:flex;}
 
