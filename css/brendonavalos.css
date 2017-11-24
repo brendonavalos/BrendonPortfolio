@@ -21,16 +21,14 @@
 }
 
 
-.sticky {
+.slideshow-image {
   padding:0;
   margin:auto;
   position: absolute;
-  visibility: hidden;
- 
 }
 
 
-.sticky img{
+.slideshow-image img{
 
    max-width: 60vw;
    max-height: 75vh;
@@ -38,8 +36,18 @@
 
 
 
+.slideshow-start {
+    padding:0;
+  margin:auto;
+  position: absolute;
+}
 
 
+.slideshow-start img{
+
+   max-width: 60vw;
+   max-height: 75vh;
+}
 
  /* MODIFIERS */
 
@@ -84,7 +92,7 @@ body {
   font-family: 'f37_boltonlight', sans-serif;
   text-transform: uppercase;
   color:#6A6A6A;
-  font-size: 3.25vw;
+  font-size: 3vw;
   line-height: 1.1;
 }
 
@@ -99,21 +107,34 @@ body {
 
 
 .ooo {
+    transition: all .2s;
     color:#fff;
     background-color:#000;
 }
 
 
 .sprayscape {
+    transition: all .2s;
     color:#fff;
     background-color:#000;
 }
 
 .gwrap {
+    transition: all .2s;
     color:#fff;
     background-color:#000;
 }
 
+.cultivar {
+    transition: all .2s;
+    color:#6A6A6A;
+    background-color:#E9E9E9;
+}
+.asavage {
+    transition: all .2s;
+    color:#6A6A6A;
+    background-color:#FFD3C2;
+}
 
 
 
@@ -245,5 +266,23 @@ body {
 
 
 
+.right {
+    padding-right:20%;
+}
+
+.top {
+   padding-top:5%;
+}
+
+.bottom{
+    padding-bottom:5%;
+}
+
+.left
+    {
+        padding-left:30%;
+    }
+.flex
+{display:;}
 
 

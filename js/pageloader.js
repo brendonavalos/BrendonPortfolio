@@ -7,6 +7,8 @@ $('.content li').click(function(event) {
  
 
 
+
+
     
     if($(event.target).is(event.target)) {
        headerTitle.html(project);
@@ -25,7 +27,7 @@ $('.content li').click(function(event) {
 	  if ($("body").hasClass("sprayscape")) {
 	  $('.blurb' ).text(sprayscapeinfo);
     $('.credits ul' ).html(sprayscapecredits); 
-    $('.scroll-display').css('display','flex')
+    $('.scroll-display .sprayscape').css('display','flex')
 	}
 
 
@@ -35,6 +37,7 @@ $('.content li').click(function(event) {
 	if ($("body").hasClass("ooo")) {
 	$('.blurb' ).text(oooinfo);
 	$('.credits ul' ).html(ooocredits); 
+  $('.ooo .scroll-display ').css('display','flex')
       
 	}
 
@@ -42,6 +45,10 @@ $('.content li').click(function(event) {
 
 
 });
+
+
+
+
 
 var indexinfo = "&#9312;I am a designer in NYC working at This Also &#9313;When I’m not at work I enjoy making music as B Boys & Gift Wrap. &#9314;When I’m not making music I am usually taking on freelance projects or making things for fun. &#9315;Feel free to get in touch.";
 var indexcredits = " <li>Contact:</li><li>avalos.brendon@gmail.com</li><li>Fonts in Use:</li><li>F37 Bolton, Marcellus</li>"
