@@ -6,47 +6,48 @@ $('.content li').click(function(event) {
 
       
 
-        var images = $(' #'+projectTitle+'.slideshow-image')
-        current = 0;
-        images.hide();
+          var images = $(' #'+projectTitle+'.slideshow-image')
+          current = 0;
+          images.hide();
       
         
         function Rotator() {
            $(images[current]).fadeIn(0);
            $(images[current]).queue(function() {
-               current = current < images.length - 1 ? current + 1 : 0;
-              
-               $(this).dequeue();
-                console.log(images.length);
+           current = current < images.length - 1 ? current + 1 : 0;
+           $(this).dequeue();
+           console.log(images.length);
            });
            console.log(current);
 
            deactivate = current+1;
            	
-
-           if( deactivate == images.length ) {
+          if( deactivate == images.length ) {
         	$('body').removeAttr('class');
    			  $('body').addClass('index');
    			  $('.header-title').html('Brendon Avalos');
    			  $('.content li').removeClass('fade-out');
    			  $('.close-title').html('designer in nyc');
-   			  $('.scroll-display').css('display','none')
+   			  $('.scroll-display').removeClass('flex')
    			  $('.content').css('margin-top','20%')
    			  $('.blurb' ).html(indexinfo);
    			  $('.credits ul' ).html(indexcredits); 
    			  $('.slideshow-image').hide();
-   			current=0;
+   			  current=0;
+          console.log(deactivate);
+          $('.scroll-display').off('click');
+          }
+          };
 
 
-    }
-        }
+$('.scroll-display').click(slideEasy);
+
+function slideEasy () {
+     $('.scroll-display').on('click', Rotator ());       
+}
+});
 
 
-
-
-
-  $('.scroll-display').click(Rotator);
-    });
 
 
 

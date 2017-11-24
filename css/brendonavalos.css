@@ -13,12 +13,6 @@
 }
 
 
-.scroll-display li {
-  list-style: none;
-  padding:0;
-    display:block;
-    margin:0 auto;
-}
 
 
 .slideshow-image {
@@ -37,7 +31,7 @@
 
 
 .slideshow-start {
-    padding:0;
+  padding:0;
   margin:auto;
   position: absolute;
 }
@@ -267,7 +261,7 @@ body {
 
 
 .right {
-    padding-right:20%;
+    padding-right:60%;
 }
 
 .top {
@@ -280,9 +274,9 @@ body {
 
 .left
     {
-        padding-left:30%;
+        padding-left:60%;
     }
 .flex
-{display:;}
+{display:flex;}
 
 

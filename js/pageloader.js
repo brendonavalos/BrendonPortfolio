@@ -25,9 +25,10 @@ $('.content li').click(function(event) {
     var sprayscapeinfo = "An app created to make the world of VR messy, fun, and easy to create.";
     var sprayscapecredits = "<li>Created with:</li> <li>This Also</li><li></li><li>Role:</li><li>Designer</li>";
 	  if ($("body").hasClass("sprayscape")) {
+    $('.scroll-display .sprayscape').addClass('flex')
 	  $('.blurb' ).text(sprayscapeinfo);
     $('.credits ul' ).html(sprayscapecredits); 
-    $('.scroll-display .sprayscape').css('display','flex')
+    
 	}
 
 
@@ -35,12 +36,22 @@ $('.content li').click(function(event) {
 	var oooinfo = "An app that ads zooming and music together.";
     var ooocredits = "<li>Created with:</li> <li>This Also</li><li></li><li>Role:</li><li>Branding, Sound Design, UI</li>";
 	if ($("body").hasClass("ooo")) {
+  $('.scroll-display.ooo').addClass('flex')
 	$('.blurb' ).text(oooinfo);
 	$('.credits ul' ).html(ooocredits); 
-  $('.ooo .scroll-display ').css('display','flex')
+  
       
 	}
 
+    var cultivarinfo = "An app that ads zooming and music together.";
+    var cultivarcredits = "<li>Created with:</li> <li>This Also</li><li></li><li>Role:</li><li>Branding, Sound Design, UI</li>";
+  if ($("body").hasClass("cultivar")) {
+  $('.scroll-display.cultivar').addClass('flex')
+  $('.blurb' ).text(cultivarinfo);
+  $('.credits ul' ).html(cultivarcredits); 
+  
+      
+  }
 
 
 
@@ -59,7 +70,7 @@ $('.close-title').click(function(){
    $('.header-title').html('Brendon Avalos');
    $('.content li').removeClass('fade-out');
    $('.close-title').html('designer in nyc');
-   $('.scroll-display').css('display','none')
+   $('.scroll-display').removeClass('flex')
    $('.content').css('margin-top','20%')
    $('.blurb' ).html(indexinfo);
    $('.credits ul' ).html(indexcredits); 
