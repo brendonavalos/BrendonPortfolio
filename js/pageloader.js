@@ -23,9 +23,9 @@ $('.content li').click(function(event) {
 
 
     var sprayscapeinfo = "An app created to make the world of VR messy, fun, and easy to create.";
-    var sprayscapecredits = "<li>Created with:</li> <li>This Also</li><li></li><li>Role:</li><li>Designer</li>";
+    var sprayscapecredits = "<li>Team:</li> <li>Role:</li><li>This Also, Google Creative Lab</li><li>UI, Branding</li>";
 	  if ($("body").hasClass("sprayscape")) {
-    $('.scroll-display .sprayscape').addClass('flex')
+    $('.scroll-display.sprayscape').addClass('flex')
 	  $('.blurb' ).text(sprayscapeinfo);
     $('.credits ul' ).html(sprayscapecredits); 
     
@@ -44,7 +44,7 @@ $('.content li').click(function(event) {
 	}
 
     var cultivarinfo = "An identiy proposed for a coffee company in Dallas Texas";
-    var cultivarcredits = "<li>Team:</li> <li>Role:</li><li>Frellance</li><li>Branding</li>";
+    var cultivarcredits = "<li>Team:</li> <li>Role:</li><li>Freelance</li><li>Branding</li>";
   if ($("body").hasClass("cultivar")) {
   $('.scroll-display.cultivar').addClass('flex')
   $('.blurb' ).text(cultivarinfo);

@@ -238,7 +238,7 @@ body {
     -moz-columns: 2;
     padding:0;
     line-height: 1.5;
-    width:80%;
+    width:50%;
 }
 
 
@@ -309,16 +309,19 @@ body {
 
 .farleft
     {
-        padding-right:60%;
+        padding-right:50%;
     }
 .farright
     {
-        padding-left:60%;
+        padding-left:50%;
     }
 .shrink img{
-    max-height: 59vh;
+    max-height: 59vh;}
 
+.shrinkw img{
+    max-width:50vw;
 }
+
 
 .flex
 {display:flex;}
